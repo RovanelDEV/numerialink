@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Numérialink</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Test Paiement Lygos</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      background-color: #222;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Numérialink</h1>
-    <p>Article : Casque Bluetooth — 5 000 FCFA</p>
-    <button onclick="payer()">Payer avec MTN MoMo</button>
-  </div>
+  <h1>Produit Test - 20 000 XAF</h1>
+  <p>Cliquez sur le bouton ci-dessous pour effectuer un paiement sécurisé via Lygos.</p>
+  <button onclick="demarrerPaiement()">Payer maintenant</button>
 
-  <script src="app.js"></script>
+  <script src="paiement.js"></script>
 </body>
 </html>
